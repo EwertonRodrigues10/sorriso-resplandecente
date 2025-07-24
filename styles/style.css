@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+@media (max-width : 767px) {
+    body {
+        font-size: 28px;
+    }
+
+    header > p {
+        font-size: 15px;
+    }
+
+    .section {
+        width: 90%;
+    }
+    
+    footer {
+        font-size: 15px;
+    }
+}
+
+@media (min-width : 768px) {
+    body {
+        font-size: 32px;
+    }
+    
+    header > p {
+        font-size: 25px;
+    }
+    .section {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+:root {
+    --fonte1: "Great Vibes", serif;
+    --fonte2: "Rowdies", serif;
+    --fonte3: "Bebas Neue", serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}  
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(--fonte2);
+
+}
+
+header {
+    background: linear-gradient(to bottom, red, orange );
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+header > h1 {
+    padding: 30px;
+    font-family: var(--fonte1);
+}
+
+header > p {
+    font-family: var(--fonte2);
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(17, 0, 255);
+}
+
+section {
+   line-height: 50px;
+   padding-top: 8vh;
+   padding-left: 8vh;
+   padding-bottom: 20px;
+   font-family: var(--fonte2);
+}
+section > p {
+   
+   padding-bottom: 2em;
+   padding-right: 2em;
+}
+
+section.normal {
+    background-color: rgba(10, 90, 238, 0.76);
+    color: white;
+    
+}
+
+section.imagem {
+    background-color: rgb(237, 237, 240);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+section.imagem > p {
+    
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01 {
+    background-image: url(https://m.media-amazon.com/images/S/pv-target-images/04d302ad1ee8e4df87b0f4f4e6b21aa3264dde54bf52ebd2d7c9a4f4ab009369.jpg);
+    
+    background-position: right center;
+}
+footer {
+    background: linear-gradient(to top, red, orange );
+    color: white;
+    text-align: center;
+}
+
+
